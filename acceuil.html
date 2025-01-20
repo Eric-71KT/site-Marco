@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esteves Construction</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: antialiased;
+            -o-font-smoothing: antialiased;
+            -font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 5px;
+        }
+
+        .navbar {
+            padding: 10px 15px;
+            margin-bottom: 20px
+        }
+
+        .navbar .navbar-brand,
+        .navbar-nav .nav-link {
+            font-size: 14px;
+        }
+
+        .navbar .logo {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .card-body h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+
+        .card-body a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 50px;
+}
+
+.txtlogo {
+    font-size: 1.25rem; /* Taille du texte ajustée */
+    margin-left: 10px;
+}
+
+#hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+    height: 100vh;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+#services .card {
+    margin-bottom: 2rem;
+}
+
+#about {
+    padding: 2rem 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%288%2C 8%2C 8%2C 0.8%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+
+#about {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-text strong {
+    display: block;
+    font-size: 22px;
+    color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+h2.text-center {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #343a40;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card img {
+    border-bottom: 5px solid #007bff;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+
+
+
+/* Styles pour améliorer la section À propos de nous */
+#about {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.about-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.highlighted-text {
+    background-color: #6f7071;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.highlighted-text p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Animation lors du défilement */
+.about-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.about-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Styles pour améliorer la section À propos de nous */
+#about {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.about-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+footer {
+    background: #222;
+    color: #eee;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #eee;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-contact p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom .logo-footer {
+    margin-bottom: 10px;
+}
+
+.footer-bottom .logo-footer .logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="logos.png" alt="Esteves Construction Logo" class="logo mr-2">
+        <a class="navbar-brand" href="index.html">Esteves Construction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nous.html">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Nous contactez</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="services" class="container py-5">
+            <h2 class="text-center">Nos Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="construction.jpg" class="card-img-top" alt="Construction">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="construction.html">Construction</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="renovation.jpg" class="card-img-top" alt="Rénovation">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="renovation.html">Rénovation</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="extension.jpg" class="card-img-top" alt="Extension">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="extension.html">Extension</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center">À propos de nous</h2>
+                <div class="row about-cards">
+                    <div class="col-md-6">
+                        <div class="about-card">
+                            <h3>Études et conseils</h3>
+                            <p>En tant que spécialistes de la construction, nous comprenons l'importance d'une bonne planification. C'est pourquoi nous offrons des services d'études et de conseils pour vous aider à définir vos projets. Nous analysons vos idées, vos besoins et vos contraintes pour vous proposer les solutions les plus adaptées. Notre objectif est de vous aider à prendre des décisions éclairées et à optimiser votre investissement.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-card">
+                            <h3>Devis et budgets adaptés</h3>
+                            <p>Chez Esteves Construction, nous savons que chaque projet est unique et mérite une attention particulière. C'est pourquoi nous proposons des devis personnalisés et des budgets adaptés à vos besoins. Nous travaillons en étroite collaboration avec vous pour comprendre vos attentes et vous proposer un devis détaillé et transparent.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-card">
+                            <h3>Collaboration avec des architectes</h3>
+                            <p>Pour garantir la réussite de votre projet, nous collaborons avec des architectes de renom. Cette collaboration nous permet de concevoir des plans précis et de réaliser des constructions qui répondent à vos attentes et respectent les normes en vigueur. Cette synergie entre nos équipes assure une coordination parfaite tout au long du projet.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-card">
+                            <h3>Travaux de qualité</h3>
+                            <p>La qualité est au cœur de notre métier. Nous nous engageons à réaliser des travaux de haute qualité pour garantir votre satisfaction. Nos équipes sont formées aux dernières techniques de construction et utilisent des matériaux de qualité pour assurer la durabilité de nos réalisations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="about-card">
+                            <h3>Respect des délais</h3>
+                            <p>Chez Esteves Construction, nous savons que le respect des délais est essentiel pour nos clients. Nous nous engageons à respecter les délais convenus et à vous tenir informé tout au long du processus de construction. Notre organisation rigoureuse et notre expérience nous permettent de garantir une livraison dans les temps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlighted-text mt-4">
+                    <p>En choisissant Esteves Construction, vous choisissez une entreprise dédiée à la satisfaction de ses clients. Nous sommes fiers de notre travail et nous nous engageons à vous offrir un service de qualité. N'hésitez pas à nous contacter pour discuter de votre projet.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone-alt"></i> 06 48 76 41 30</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 2, impasse Heureux, 71000 Sancé</p>
+                    <p><i class="fas fa-envelope"></i> marcoesteves71@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <img src="logos.png" alt="Esteves Construction Logo" width=35% height=35%>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Esteves Construction. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function onScroll() {
+                const cards = document.querySelectorAll('.about-card');
+                const triggerBottom = window.innerHeight / 5 * 4;
+    
+                cards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+    
+                    if (cardTop < triggerBottom) {
+                        card.classList.add('visible');
+                    } else {
+                        card.classList.remove('visible');
+                    }
+                });
+            }
+    
+            window.addEventListener('scroll', onScroll);
+            onScroll(); // trigger on scroll initially
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: antialiased;
+            -o-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        body {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 30px;
+            color: #777;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact textarea,
+        #contact button[type="submit"] {
+            font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+        }
+
+        #contact {
+            background: #f7f7f7;
+            padding: 25px;
+            margin: 50px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #contact:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #contact h3 {
+            color: #333;
+            display: block;
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        #contact h4 {
+            margin: 5px 0 15px;
+            display: block;
+            font-size: 13px;
+        }
+
+        fieldset {
+            border: medium none !important;
+            margin: 0 0 10px;
+            min-width: 100%;
+            padding: 0;
+            width: 100%;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact textarea {
+            width: 100%;
+            border: 1px solid #CCC;
+            background: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #contact input[type="text"]:hover,
+        #contact input[type="email"]:hover,
+        #contact input[type="tel"]:hover,
+        #contact textarea:hover {
+            border: 1px solid #AAA;
+        }
+
+        #contact textarea {
+            height: 100px;
+            max-width: 100%;
+            resize: none;
+        }
+
+        #contact button[type="submit"] {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background: #0CF;
+            color: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 4px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        #contact button[type="submit"]:hover {
+            background: #09C;
+        }
+
+        #contact button[type="submit"]:active {
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        #contact input:focus,
+        #contact textarea:focus {
+            outline: 0;
+            border: 1px solid #999;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #888;
+        }
+
+        :-moz-placeholder {
+            color: #888;
+        }
+
+        ::-moz-placeholder {
+            color: #888;
+        }
+
+        :-ms-input-placeholder {
+            color: #888;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+            padding: 10px 15px;
+        }
+
+        .navbar .navbar-brand,
+        .navbar-nav .nav-link {
+            font-size: 14px;
+        }
+
+        .navbar .logo {
+            height: 30px;
+            margin-right: 10px;
+        }   
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="logos.png" alt="Esteves Construction Logo" class="logo mr-2">
+        <a class="navbar-brand" href="index.html">Esteves Construction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Nous contactez</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form id="contact" action="" method="post">
+            <h3>Formulaire de contact</h3>
+            <h4>Contactez-nous pour développé votre projet !</h4>
+            <fieldset>
+                <input placeholder="Votre Nom" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Votre prénom" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Votre addresse Email" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Votre numéro de téléphone" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Le sujet de votre demande" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Tapez votre message ici...." tabindex="4" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'C:/UwAmp/www/PHPMailer/src/Exception.php';
+require 'C:/UwAmp/www/PHPMailer/src/PHPMailer.php';
+require 'C:/UwAmp/www/PHPMailer/src/SMTP.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $email = $_POST['email'];
+    $telephone = $_POST['telephone'];
+    $sujet = $_POST['sujet'];
+    $message = $_POST['message'];
+
+    $mail = new PHPMailer(true);
+
+    try {
+        // Paramètres du serveur
+        $mail->isSMTP();
+        $mail->Host = 'localhost';
+        $mail->Port = 25;  
+        $mail->SMTPAuth = false;  
+        $mail->SMTPAutoTLS = false;  
+        $mail->SMTPDebug = 2;  
+
+        // Destinataires
+        $mail->setFrom($email, $prenom . ' ' . $nom);
+        $mail->addAddress('votreadresse@gmail.com', 'Votre Nom');
+
+        // Contenu a envoyer
+        $mail->isHTML(true);
+        $mail->Subject = 'Soumission du formulaire de contact : ' . $sujet;
+        $mail->Body    = '<b>Nom:</b> ' . $nom . '<br>' .
+                         '<b>Prénom:</b> ' . $prenom . '<br>' .
+                         '<b>Email:</b> ' . $email . '<br>' .
+                         '<b>Téléphone:</b> ' . $telephone . '<br>' .
+                         '<b>Sujet:</b> ' . $sujet . '<br>' .
+                         '<b>Message:</b><br>' . nl2br($message);
+
+        $mail->send();
+        $success = 'Le message a été envoyé avec succès';
+    } catch (Exception $e) {
+        $error = "Impossible d'envoyer le message. Erreur PHPMailer : {$mail->ErrorInfo}";
+    }
+}
+
+?>
